@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.hello {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.logo {
+  width: 35px;
+}
+.linkName {
+  font-size: 1.3rem;
+}
+
+.d {
+  color: red;
+}
