@@ -41,7 +41,7 @@ export default function Home() {
           />
           <PersonalLink
             name="Discord (CubingSoda#1766)"
-            img="/Discord.png"
+            img="/discord.png"
             href="https://discord.com/users/822191907286417450"
           />
         </div>

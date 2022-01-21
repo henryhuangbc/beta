@@ -1,3 +1,3 @@
 # CubingSoda's Website
 
-[https://cubingsoda.vercel.app](https://cubingsoda.vercel.app)
+[https://cubing-soda.vercel.app](https://cubing-soda.vercel.app/)
