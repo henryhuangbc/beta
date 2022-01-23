@@ -62,6 +62,7 @@ export default function Home() {
                   className={styles.projectLink}
                   href={project.link}
                   target="_blank"
+                  rel="noreferrer"
                   key={uuidv4()}
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
