@@ -9,6 +9,7 @@ import projects from "lib/projects";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
                   className={styles.projectLink}
                   href={project.link}
                   target="_blank"
+                  key={uuidv4()}
                 >
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
                   <span>
