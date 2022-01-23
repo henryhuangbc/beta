@@ -21,3 +21,37 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav > .links {
+  margin: 1rem;
+}
+
+nav > .links > a {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+footer {
+  display: flex;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -moz-box-align: center;
+  align-items: center;
+  margin-top: auto;
+  color: white;
+  background-color: rgb(58, 14, 120);
+  padding: 10px;
+}
+
+.Typewriter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.svg-inline--fa {
+  width: 14px;
+}

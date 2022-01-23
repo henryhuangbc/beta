@@ -1,0 +1,83 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.hello {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+
+  @media screen and (max-width: 1217px) {
+    font-size: 5rem;
+  }
+  @media screen and (max-width: 1016px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 844px) {
+    font-size: 3.5rem;
+  }
+  @media screen and (max-width: 726px) {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 625px) {
+    word-wrap: break-word;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-top: 2rem;
+  border-radius: 13px;
+  padding: 0 3rem 0 3rem;
+  box-shadow: 0px 0px 12px 10px #838383db;
+}
+
+.projectLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin: 0.5rem 0 0.5rem 0;
+  border: 2px solid aliceblue;
+  padding: 8px;
+  border-radius: 0.3rem;
+}
+
+.projectLink:first-child {
+  margin-top: 1rem;
+}
+.projectLink:last-child {
+  margin-bottom: 1rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.logo {
+  width: 35px;
+}
+.linkName {
+  font-size: 1.3rem;
+}
+
+.cardTitle {
+  text-align: center;
+  color: #00526b;
+  font-size: 1.8rem;
+}
