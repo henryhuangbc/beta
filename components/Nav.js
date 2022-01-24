@@ -12,8 +12,6 @@ export default function Nav() {
           <a>Projects</a>
         </Link>
       </section>
-
-      <hr />
     </nav>
   );
 }

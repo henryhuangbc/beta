@@ -5,7 +5,7 @@ import Footer from "components/Footer";
 import PersonalLink from "components/PersonalLink";
 
 import Typewriter from "typewriter-effect";
-import projects from "lib/projects";
+import projects from "lib/projectsList";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -14,24 +14,22 @@ import { v4 as uuidv4 } from "uuid";
 export default function Home() {
   return (
     <>
-      <Nav />
       <Meta />
+      <Nav />
 
       <main className={styles.main}>
-        <div className={styles.hello}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .changeDelay(80)
-                .typeString("Hi, I am a React.js Developer.")
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .changeDelay(80)
+              .typeString("Hi, I am a React.js Developer.")
 
-                .callFunction(() => {
-                  console.log("String typed out");
-                })
-                .start();
-            }}
-          />
-        </div>
+              .callFunction(() => {
+                console.log("String typed out");
+              })
+              .start();
+          }}
+        />
 
         <div className={styles.cards}>
           <div className={`${styles.card}`}>
@@ -39,17 +37,17 @@ export default function Home() {
 
             <PersonalLink
               name="GitHub"
-              img="/github.png"
+              img="/img/icons/github.png"
               href="https://github.com/CubingSoda"
             />
             <PersonalLink
               name="Reddit"
-              img="/reddit.png"
+              img="/img/icons/reddit.png"
               href="https://www.reddit.com/user/CubingSoda/"
             />
             <PersonalLink
               name="Discord"
-              img="/discord.png"
+              img="/img/icons/discord.png"
               href="https://discord.com/users/822191907286417450"
             />
           </div>

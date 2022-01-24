@@ -10,7 +10,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(45deg, #d9d0c7, #00b7ff);
+  background: linear-gradient(10deg, #d3d3d3, #00c2ff);
+
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(10deg, #0d0d0d, #00c2ff);
+  }
 }
 
 a {
@@ -22,8 +26,19 @@ a {
   box-sizing: border-box;
 }
 
+.site-icon {
+  width: 30px;
+}
+
+nav {
+  border-bottom: 2px solid black;
+}
 nav > .links {
   margin: 1rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
 }
 
 nav > .links > a {
@@ -32,12 +47,8 @@ nav > .links > a {
 
 footer {
   display: flex;
-  -moz-box-orient: horizontal;
-  -moz-box-direction: normal;
   flex-direction: row;
-  -moz-box-pack: justify;
   justify-content: space-between;
-  -moz-box-align: center;
   align-items: center;
   margin-top: auto;
   color: white;
@@ -45,13 +56,44 @@ footer {
   padding: 10px;
 }
 
+.footer-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.3rem;
+}
+.footer-2 {
+  margin-right: 0.5rem;
+}
+
 .Typewriter {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @media screen and (max-width: 607px) {
+    margin-top: 1.4rem;
+  }
+  color: white;
+  font-size: max(4rem, 7vw, 4rem);
+  font-weight: bold;
+}
+.Typewriter__cursor {
+  display: none;
 }
 
 .svg-inline--fa {
   width: 14px;
+}
+
+.GitHub-logo {
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100);
+  }
+}
+
+.Easy-Music-img {
+  width: 120px !important;
 }
