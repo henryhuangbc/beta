@@ -83,6 +83,9 @@ footer {
 .Typewriter__cursor {
   display: none;
 }
+.Typewriter__wrapper::before {
+  content: "ㅤ";
+}
 
 .svg-inline--fa {
   width: 14px;

@@ -30,7 +30,6 @@ export default function Home() {
               .start();
           }}
         />
-
         <div className={styles.cards}>
           <div className={`${styles.card}`}>
             <h1 className={styles.cardTitle}>Media</h1>
