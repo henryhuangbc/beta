@@ -4,7 +4,6 @@ import Nav from "components/Nav";
 import Footer from "components/Footer";
 import PersonalLink from "components/PersonalLink";
 
-import Typewriter from "typewriter-effect";
 import projects from "lib/projectsList";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,18 +17,7 @@ export default function Home() {
       <Nav />
 
       <main className={styles.main}>
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .changeDelay(80)
-              .typeString("Hi, I am a React.js Developer.")
-
-              .callFunction(() => {
-                console.log("String typed out");
-              })
-              .start();
-          }}
-        />
+        <h1 className={styles.hello}>Hi, I am a React.js Developer.</h1>
         <div className={styles.cards}>
           <div className={`${styles.card}`}>
             <h1 className={styles.cardTitle}>Media</h1>
@@ -51,7 +39,7 @@ export default function Home() {
             />
           </div>
 
-          <div className={`${styles.card}`}>
+          <div className={`${styles.card} ${styles.projectsCard}`}>
             <h1 className={styles.cardTitle}>Projects</h1>
             {projects.slice(0, 4).map((project) => {
               return (
