@@ -31,6 +31,10 @@
   @media screen and (max-width: 607px) {
     margin-bottom: 3rem;
   }
+
+  @media screen and (min-width: 1350px) {
+    margin-bottom: 4rem;
+  }
 }
 
 .card {
@@ -95,4 +99,8 @@
   @media screen and (max-width: 440px) {
     margin: 1.3rem;
   }
+}
+
+.nameAndDate {
+  text-align: center;
 }

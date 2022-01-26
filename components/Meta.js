@@ -18,12 +18,12 @@ export default function Meta({ page }) {
 
       <meta
         property="og:image"
-        content="https://cubing-soda.vercel.app/icon.png"
+        content="https://cubing-soda.pages.dev/icon.png"
       />
       <meta property="og:title" content={title} />
       <meta property="og:description" content="CubingSoda's Website" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://cubing-soda.vercel.app" />
+      <meta property="og:url" content="https://cubing-soda.pages.dev" />
 
       <link rel=" icon" href="/icon.png" />
       <link rel="shortcut icon" href="/icon.png" />

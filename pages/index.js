@@ -50,8 +50,8 @@ export default function Home() {
                   rel="noreferrer"
                   key={uuidv4()}
                 >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                  <span>
+                  {/* <FontAwesomeIcon icon={faExternalLinkAlt} /> */}
+                  <span className={styles.nameAndDate}>
                     <span>{project.name}</span> - <span>{project.date}</span>
                   </span>
                 </a>
