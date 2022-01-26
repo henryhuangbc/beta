@@ -13,8 +13,12 @@ body {
   background: linear-gradient(10deg, #d3d3d3, #00c2ff);
 
   @media (prefers-color-scheme: dark) {
-    background: linear-gradient(10deg, #0d0d0d, #00c2ff);
+    background: linear-gradient(10deg, #1f1f1f, #00c2ff);
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -22,14 +26,7 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.site-icon {
-  width: 30px;
-}
-
+// Nav
 nav {
   border-bottom: 2px solid black;
 }
@@ -45,6 +42,7 @@ nav > .links > a {
   margin: 0 0.5rem 0 0.5rem;
 }
 
+// Footer
 footer {
   display: flex;
   flex-direction: row;
@@ -67,17 +65,18 @@ footer {
   margin-right: 0.5rem;
 }
 
-.Typewriter {
-}
-.Typewriter__cursor {
-  display: none;
-}
-.Typewriter__wrapper::before {
-  content: "ㅤ";
-}
-
+// Font Awesome
 .svg-inline--fa {
   width: 14px;
+}
+
+// Logos
+.site-icon {
+  width: 30px;
+}
+
+.logo {
+  width: 35px;
 }
 
 .GitHub-logo {
