@@ -6,8 +6,6 @@ import PersonalLink from "components/MediaLink";
 
 import projects from "lib/projectsList";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
@@ -50,7 +48,6 @@ export default function Home() {
                   rel="noreferrer"
                   key={uuidv4()}
                 >
-                  {/* <FontAwesomeIcon icon={faExternalLinkAlt} /> */}
                   <span className={styles.nameAndDate}>
                     <span>{project.name}</span> - <span>{project.date}</span>
                   </span>

@@ -24,6 +24,8 @@ export default function Projects() {
                 src={project.img}
                 className={`${styles.projectImg} ${`${project.cleanName}-img`}`}
                 alt="Project Image"
+                width={project.imgDimensions[0]}
+                height={project.imgDimensions[1]}
               />
 
               <div>
