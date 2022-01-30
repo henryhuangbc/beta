@@ -7,7 +7,12 @@ export default function RegularNav() {
     <div className={styles.regular}>
       <Link href="/">
         <a>
-          <img src="/icon.png" className={styles.heroIcon} draggable="false" />
+          <img
+            src="/icon.png"
+            className={styles.heroIcon}
+            alt="Site Icon"
+            draggable="false"
+          />
         </a>
       </Link>
 
