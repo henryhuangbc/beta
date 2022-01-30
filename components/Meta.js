@@ -2,7 +2,6 @@ import Head from "next/head";
 
 export default function Meta({ page }) {
   let title;
-
   title = page ? `${page} | CubingSoda` : `CubingSoda`;
 
   return (
@@ -12,18 +11,24 @@ export default function Meta({ page }) {
 
       <meta
         name="keywords"
-        content="programming, code, coding, js, javascript, py, python, cubingsoda"
+        content="programming, code, coding, js, javascript, py, python, react, reactjs, cubingsoda"
       />
-      <meta name="description" content="CubingSoda's Website" />
+      <meta
+        name="description"
+        content="My personal website. I showcase my projects and I make posts every once in awhile"
+      />
 
       <meta
         property="og:image"
-        content="https://cubing-soda.pages.dev/icon.png"
+        content="https://cubingsoda.pages.dev/icon.png"
       />
       <meta property="og:title" content={title} />
-      <meta property="og:description" content="CubingSoda's Website" />
+      <meta
+        property="og:description"
+        content="My personal website. I showcase my projects and I make posts every once in awhile"
+      />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://cubing-soda.pages.dev" />
+      <meta property="og:url" content="https://cubingsoda.pages.dev" />
 
       <link rel=" icon" href="/icon.png" />
       <link rel="shortcut icon" href="/icon.png" />
