@@ -40,6 +40,7 @@ export default function Ham() {
                 <img
                   src="/icon.png"
                   className={styles.heroIcon}
+                  alt="Site Icon"
                   draggable="false"
                 />
                 CubingSoda
