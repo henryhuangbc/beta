@@ -1,0 +1,109 @@
+.wrapper {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post {
+  border-bottom: 2px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: clamp(27ch, 94%, 71ch);
+
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 2px solid white;
+  }
+}
+
+.post:last-child {
+  border: none;
+}
+
+.name {
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 2.4rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+}
+
+.date {
+  color: #4d4d4d;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+}
+
+.tags {
+  margin: 1.3rem 0 1rem 0;
+}
+
+.tag {
+  border: 1px solid black;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin: 0.3rem 0.7rem 0.3rem 0;
+
+  @media (prefers-color-scheme: dark) {
+    border: 1px solid white;
+    color: white;
+  }
+}
+
+.contentDesc {
+  line-height: 1.4;
+  font-size: 1.3rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+}
+
+.readMore {
+  display: block;
+  margin-top: 1rem;
+  width: fit-content;
+  text-decoration: none !important;
+  border-bottom: 1px solid black;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+}
+
+/*
+  MARKDOWN STYLES
+*/
+.post a {
+  text-decoration: underline;
+}
+.post h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.post h2 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.post h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.post h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+.post h5 {
+  font-size: 0.4rem;
+  font-weight: normal;
+}
+.post h6 {
+  font-size: 0.04rem;
+  font-weight: normal;
+}

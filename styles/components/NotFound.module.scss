@@ -1,0 +1,19 @@
+.notFound {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  font-family: "Courier New", Courier, monospace;
+}

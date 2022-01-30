@@ -4,7 +4,7 @@ import Nav from "components/Nav";
 import Footer from "components/Footer";
 import PersonalLink from "components/MediaLink";
 
-import projects from "lib/projectsList";
+import projects from "lib/projects-list";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -12,10 +12,9 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <Nav />
 
       <main className={styles.main}>
-        <h1 className={styles.hello}>Hi, I am a React.js Developer.</h1>
+        <h1 className={styles.hello}>Hi, I am a Front-end Web Developer.</h1>
         <div className={styles.cards}>
           <div className={`${styles.card}`}>
             <h1 className={styles.cardTitle}>Media</h1>
@@ -57,8 +56,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </>
   );
 }

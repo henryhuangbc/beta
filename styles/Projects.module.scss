@@ -25,6 +25,7 @@
 
   @media (prefers-color-scheme: dark) {
     box-shadow: 0px 0px 12px 10px #1b1b1b9c;
+    background: #2a2a2a;
   }
 }
 
@@ -70,6 +71,5 @@
 }
 .links > a:hover {
   transition: 0.5s ease;
-  //   background-color: brightness;
   filter: brightness(80%);
 }

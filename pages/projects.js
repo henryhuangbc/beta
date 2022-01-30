@@ -1,8 +1,6 @@
 import Meta from "components/Meta";
-import Nav from "components/Nav";
-import Footer from "components/Footer";
 
-import projects from "lib/projectsList";
+import projects from "lib/projects-list";
 
 import styles from "styles/Projects.module.scss";
 
@@ -14,9 +12,8 @@ export default function Projects() {
   return (
     <>
       <Meta page="Projects" />
-      <Nav />
 
-      <div className={styles.projects}>
+      <main className={styles.projects}>
         {projects.map((project) => {
           return (
             <div className={styles.project} key={uuidv4()}>
@@ -52,9 +49,7 @@ export default function Projects() {
             </div>
           );
         })}
-      </div>
-
-      <Footer />
+      </main>
     </>
   );
 }

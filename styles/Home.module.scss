@@ -15,9 +15,13 @@
   @media screen and (max-width: 607px) {
     margin-top: 1.4rem;
   }
-  color: white;
+  color: black;
   font-size: max(4rem, 7vw, 4rem);
   font-weight: bold;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
 }
 
 .cards {
@@ -26,6 +30,7 @@
   align-items: center;
   gap: 4rem;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 
   @media screen and (max-width: 607px) {
@@ -40,25 +45,26 @@
 .card {
   border-radius: 13px;
   padding: 0 3rem 0 3rem;
-  box-shadow: 0px 0px 12px 10px #838383db;
+  box-shadow: 0px 0px 12px 10px #e5eeff73;
 
   @media (prefers-color-scheme: dark) {
-    box-shadow: 0px 0px 12px 10px #1b1b1b9c;
+    box-shadow: 0px 0px 12px 10px #44444473;
   }
 }
 
 .projectLink {
+  color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3px;
   margin: 0.5rem 0 0.5rem 0;
-  border: 2px solid aliceblue;
+  border: 2px solid gray;
   padding: 8px;
   border-radius: 0.3rem;
 
   @media (prefers-color-scheme: dark) {
-    color: #d1d1d1;
+    color: white;
   }
 }
 
@@ -80,18 +86,20 @@
 .linkName {
   font-size: 1.3rem;
 
+  color: gray;
+
   @media (prefers-color-scheme: dark) {
-    color: #d1d1d1;
+    color: white;
   }
 }
 
 .cardTitle {
   text-align: center;
-  color: #00526b;
+  color: gray;
   font-size: 1.8rem;
 
   @media (prefers-color-scheme: dark) {
-    color: #d7d7d7;
+    color: white;
   }
 }
 
