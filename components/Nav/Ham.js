@@ -1,11 +1,15 @@
 import Link from "next/link";
 
 import { HamburgerSpin } from "react-animated-burgers";
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, isValidElement } from "react";
 
 import styles from "styles/components/NavBar.module.scss";
 
 export default function Ham() {
+  function closeHamNav() {
+    setIsActive(false);
+  }
+
   const [isActive, setIsActive] = useState(false);
 
   const toggleButton = useCallback(
@@ -13,15 +17,17 @@ export default function Ham() {
     []
   );
 
+  useEffect(() => {
+    if (isActive) {
+      document.body.classList.add("active");
+    } else {
+      document.body.classList.remove("active");
+    }
+  }, [isActive]);
+
   return (
     <div className={styles.ham}>
-      {process.browser && (
-        <HamburgerSpin
-          buttonColor="#ff000000"
-          {...{ isActive, toggleButton }}
-        />
-      )}
-
+      <HamburgerSpin buttonColor="#ff000000" {...{ isActive, toggleButton }} />
       <div
         className={`${isActive ? styles.hamShow : styles.hamHide} ${
           styles.hamContent
@@ -30,7 +36,7 @@ export default function Ham() {
         <section className={styles.links}>
           <div className={styles.homeLink}>
             <Link href="/">
-              <a>
+              <a onClick={closeHamNav}>
                 <img
                   src="/icon.png"
                   className={styles.heroIcon}
@@ -43,14 +49,15 @@ export default function Ham() {
 
           <div className={styles.otherLinks}>
             <Link href="/projects">
-              <a>Projects</a>
+              <a onClick={closeHamNav}>Projects</a>
             </Link>
 
             <Link href="/posts">
-              <a>Posts</a>
+              <a onClick={closeHamNav}>Posts</a>
             </Link>
 
             <a
+              onClick={closeHamNav}
               href="https://github.com/CubingSoda/personal-website"
               target="_blank"
               rel="noreferrer"

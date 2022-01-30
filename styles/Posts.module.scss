@@ -7,14 +7,10 @@
 }
 
 .post {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--second-text-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: clamp(27ch, 94%, 71ch);
-
-  @media (prefers-color-scheme: dark) {
-    border-bottom: 2px solid white;
-  }
 }
 
 .post:last-child {
@@ -22,21 +18,13 @@
 }
 
 .name {
-  color: #4d4d4d;
+  color: var(--second-text-color);
   font-weight: bold;
   font-size: 2.4rem;
-
-  @media (prefers-color-scheme: dark) {
-    color: white;
-  }
 }
 
 .date {
-  color: #4d4d4d;
-
-  @media (prefers-color-scheme: dark) {
-    color: white;
-  }
+  color: var(--second-text-color);
 }
 
 .tags {
@@ -44,44 +32,34 @@
 }
 
 .tag {
-  border: 1px solid black;
+  color: var(--second-text-color);
+  border: 1px solid var(--second-text-color);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   margin: 0.3rem 0.7rem 0.3rem 0;
-
-  @media (prefers-color-scheme: dark) {
-    border: 1px solid white;
-    color: white;
-  }
 }
 
 .contentDesc {
   line-height: 1.4;
-  font-size: 1.3rem;
-
-  @media (prefers-color-scheme: dark) {
-    color: white;
-  }
+  font-size: 1rem;
+  color: var(--second-text-color);
 }
 
-.readMore {
+.readMore,
+.readMore:hover {
   display: block;
   margin-top: 1rem;
   width: fit-content;
   text-decoration: none !important;
   border-bottom: 1px solid black;
-
-  @media (prefers-color-scheme: dark) {
-    color: white;
-    border-bottom: 1px solid white;
-  }
+  color: var(--second-text-color);
+  border-bottom: 1px solid var(--second-text-color);
 }
 
 /*
   MARKDOWN STYLES
 */
 .post a {
-  text-decoration: underline;
 }
 .post h1 {
   font-size: 2rem;
@@ -106,4 +84,11 @@
 .post h6 {
   font-size: 0.04rem;
   font-weight: normal;
+}
+.post code {
+  font-family: "Fira Code", monospace;
+  background: #56000b;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 0.85rem;
 }

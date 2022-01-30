@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function RegularNav() {
   return (
     <div className={styles.regular}>
-      <Link href="/" passHref>
+      <Link href="/">
         <a>
           <img src="/icon.png" className={styles.heroIcon} draggable="false" />
         </a>

@@ -15,12 +15,9 @@
   align-items: center;
 }
 
-.links a {
-  color: rgb(80, 80, 80);
-
-  @media (prefers-color-scheme: dark) {
-    color: white;
-  }
+.links a,
+.links a:hover {
+  color: var(--second-text-color);
 }
 
 .repoLink {
@@ -44,30 +41,21 @@
 .hamContent {
   font-family: "Roboto", sans-serif;
   position: fixed;
-  border: 2px solid black;
+  border: 2px solid var(--text-color);
   padding: 1rem;
   border-radius: 0.4rem;
   margin: 2rem;
-  background: white;
+  background: var(--second-bg-color);
   width: 84%;
   height: 83.1%;
   z-index: 1;
   color: white;
-
-  @media (prefers-color-scheme: dark) {
-    background: #212121;
-    border: 2px solid white;
-  }
 }
 
 .ham > button > div > span,
 .ham > button > div > span::before,
 .ham > button > div > span::after {
-  background-color: black;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: white;
-  }
+  background-color: var(--text-color);
 }
 
 .regular .links a {
@@ -75,7 +63,7 @@
 }
 
 .regular .repoLink {
-  margin-left: 2rem !important;
+  margin-left: 1.5rem !important;
 }
 
 .ham .links {
