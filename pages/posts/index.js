@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import Meta from "components/Meta";
 import PostSearch from "components/PostSearch";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 export default function SinglePost({ allPosts }) {
   const [shown, setShown] = useState(allPosts);
