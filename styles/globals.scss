@@ -62,3 +62,17 @@ a:hover {
 .Easy-Music-img {
   width: 112px !important;
 }
+
+.burger {
+  margin: 0.6rem 0 0 1rem;
+}
+
+.burger-lines,
+.burger-lines::before,
+.burger-lines::after {
+  background-color: var(--text-color) !important;
+}
+
+.burger.burger-squeeze.open .burger-lines {
+  background-color: transparent !important;
+}

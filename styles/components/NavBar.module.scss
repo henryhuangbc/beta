@@ -52,12 +52,6 @@
   color: white;
 }
 
-.ham > button > div > span,
-.ham > button > div > span::before,
-.ham > button > div > span::after {
-  background-color: var(--text-color);
-}
-
 .regular .links a {
   margin: 0 0.7rem 0 0.7rem;
 }

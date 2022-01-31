@@ -1,35 +1,42 @@
 import Link from "next/link";
 
-import { HamburgerSpin } from "react-animated-burgers";
+// import { HamburgerSpin } from "react-animated-burgers";
 import { useState, useCallback, useEffect, isValidElement } from "react";
+
+// React Component
+import Burger from "@animated-burgers/burger-squeeze";
+// don't forget the styles
+import "@animated-burgers/burger-squeeze/dist/styles.css";
 
 import styles from "styles/components/NavBar.module.scss";
 
 export default function Ham() {
+  const [hamOpen, setHamOpen] = useState(false);
+
   function closeHamNav() {
-    setIsActive(false);
+    setHamOpen(false);
   }
 
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleButton = useCallback(
-    () => setIsActive((prevState) => !prevState),
-    []
-  );
-
   useEffect(() => {
-    if (isActive) {
+    if (hamOpen) {
       document.body.classList.add("active");
     } else {
       document.body.classList.remove("active");
     }
-  }, [isActive]);
+  }, [hamOpen]);
 
   return (
     <div className={styles.ham}>
-      <HamburgerSpin buttonColor="#ff000000" {...{ isActive, toggleButton }} />
       <div
-        className={`${isActive ? styles.hamShow : styles.hamHide} ${
+        onClick={() => {
+          setHamOpen(!hamOpen);
+        }}
+      >
+        <Burger isOpen={hamOpen} />
+      </div>
+
+      <div
+        className={`${hamOpen ? styles.hamShow : styles.hamHide} ${
           styles.hamContent
         }`}
       >
