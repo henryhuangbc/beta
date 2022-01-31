@@ -39,29 +39,6 @@ a:hover {
   transition: color 0.2s ease;
 }
 
-// Footer
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  color: white;
-  background-color: rgb(14, 44, 120);
-  padding: 10px;
-}
-
-.footer-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem;
-  margin-left: 0.3rem;
-}
-.footer-2 {
-  margin-right: 0.5rem;
-}
-
 // Font Awesome
 .svg-inline--fa {
   width: 14px;

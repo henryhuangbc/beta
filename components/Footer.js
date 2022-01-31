@@ -1,11 +1,13 @@
+import styles from "styles/components/Footer.module.scss";
+
 export default function Footer() {
   return (
-    <footer>
-      <div className="footer-1">
+    <footer className={styles.footer}>
+      <div className={styles.footer1}>
         <img src="/icon.png" alt="Site Icon" className="site-icon" />
         <span>CubingSoda</span>
       </div>
-      <div className="footer-2">
+      <div className={styles.footer2}>
         <span>Copyright &copy; {new Date().getFullYear()}</span>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 import Meta from "components/Meta";
 
-import styles from "styles/components/NotFound.module.scss";
+import styles from "styles/NotFound.module.scss";
 
 export default function NotFound() {
   return (
