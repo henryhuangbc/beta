@@ -11,7 +11,7 @@ export default function SinglePost({ post }) {
     <>
       <Meta page={post.title} />
       <div className={styles.wrapper}>
-        <Post postData={post} />
+        <Post postData={post} content />
       </div>
     </>
   );

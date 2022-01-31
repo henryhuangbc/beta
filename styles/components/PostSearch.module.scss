@@ -1,0 +1,27 @@
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.postSearchIcon {
+  width: 1.8rem;
+}
+.postSearch {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  width: clamp(18rem, 39vw, 56rem);
+  height: 3rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: 0px solid #0099ff;
+  transition: 0.1s ease-in;
+  padding: 0 0.4rem 0 0.4rem;
+  border: 3px solid var(--text-color);
+}
+
+.postSearch:focus {
+  outline: 4px solid #0099ff;
+  transition: 0.1s ease-in;
+}

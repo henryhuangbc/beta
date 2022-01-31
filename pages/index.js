@@ -1,7 +1,5 @@
 import styles from "styles/Home.module.scss";
 import Meta from "components/Meta";
-import Nav from "components/Nav";
-import Footer from "components/Footer";
 import PersonalLink from "components/MediaLink";
 
 import projects from "lib/projects-list";

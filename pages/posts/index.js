@@ -1,19 +1,24 @@
 import Post from "components/Post";
 import { getAllPosts } from "lib/posts-api";
-import markdownToHtml from "lib/markdown-to-html";
 
 import styles from "styles/Posts.module.scss";
 import { v4 as uuidv4 } from "uuid";
 
 import Meta from "components/Meta";
+import PostSearch from "components/PostSearch";
+import { useState } from "react/cjs/react.development";
 
 export default function SinglePost({ allPosts }) {
+  const [shown, setShown] = useState(allPosts);
+
   return (
     <>
       <Meta page="Posts" />
 
       <div className={styles.wrapper}>
-        {allPosts.map((post) => {
+        <PostSearch posts={allPosts} shown={setShown} />
+
+        {shown.map((post) => {
           return <Post postData={post} key={uuidv4()} />;
         })}
       </div>
@@ -25,10 +30,10 @@ export async function getStaticProps() {
   const allPosts = getAllPosts([
     "slug",
     "title",
-    "desc",
     "date",
     "tags",
     "desc",
+    "content",
   ]);
 
   return {
