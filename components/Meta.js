@@ -30,7 +30,7 @@ export default function Meta({ page }) {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://cubingsoda.pages.dev" />
 
-      <link rel=" icon" href="/icon.png" />
+      <link rel="icon" href="/icon.png" />
       <link rel="shortcut icon" href="/icon.png" />
       <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
