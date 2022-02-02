@@ -9,7 +9,7 @@ import PostSearch from "components/PostSearch";
 import { useState } from "react";
 
 export default function SinglePost({ allPosts }) {
-  const [shown, setShown] = useState(allPosts.reverse());
+  const [shown, setShown] = useState(allPosts);
 
   return (
     <>
