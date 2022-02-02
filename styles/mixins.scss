@@ -1,0 +1,29 @@
+@mixin second-text {
+  color: var(--second-text-color);
+  transition: 0.15s ease-in;
+
+  &:hover {
+    color: var(--second-text-hover-color);
+    transition: 0.15s ease-in;
+  }
+}
+
+@mixin second-border {
+  border: 2px solid var(--second-text-color);
+  transition: 0.15s ease-in;
+
+  &:hover {
+    border: 2px solid var(--second-text-hover-color);
+    transition: 0.15s ease-in;
+  }
+}
+
+@mixin second-border-bottom {
+  border-bottom: 2px solid var(--second-text-color);
+  transition: 0.15s ease-in;
+
+  &:hover {
+    border-bottom: 2px solid var(--second-text-hover-color);
+    transition: 0.15s ease-in;
+  }
+}

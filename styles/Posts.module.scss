@@ -1,3 +1,5 @@
+@import "styles/mixins.scss";
+
 .wrapper {
   flex: 1;
   padding: 2rem;
@@ -11,6 +13,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: clamp(27ch, 94%, 71ch);
+  color: var(--second-text-color);
 }
 
 .post:last-child {
@@ -18,13 +21,11 @@
 }
 
 .name {
-  color: var(--second-text-color);
   font-weight: bold;
   font-size: 2.4rem;
 }
 
 .date {
-  color: var(--second-text-color);
 }
 
 .tags {
@@ -32,7 +33,6 @@
 }
 
 .tag {
-  color: var(--second-text-color);
   border: 1px solid var(--second-text-color);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
@@ -42,18 +42,17 @@
 .contentDesc {
   line-height: 1.4;
   font-size: 1rem;
-  color: var(--second-text-color);
 }
 
-.readMore,
-.readMore:hover {
+.readMore {
   display: block;
   margin-top: 1rem;
   width: fit-content;
   text-decoration: none !important;
   border-bottom: 1px solid black;
-  color: var(--second-text-color);
-  border-bottom: 1px solid var(--second-text-color);
+
+  @include second-text;
+  @include second-border-bottom;
 }
 
 /*

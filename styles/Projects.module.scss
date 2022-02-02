@@ -1,3 +1,5 @@
+@import "styles/mixins.scss";
+
 .projects {
   display: flex;
   justify-content: center;
@@ -23,6 +25,7 @@
   padding: 1rem;
   gap: 1rem;
   box-shadow: var(--card-styles);
+  color: var(--second-text-color);
 }
 
 .projectImg {
@@ -38,7 +41,6 @@
 .projectTitle,
 .desc {
   text-align: center;
-  color: var(--second-text-color);
 }
 
 .links {
@@ -50,13 +52,9 @@
 }
 
 .links > a {
-  color: var(--second-text-color);
-  border: 2px solid var(--second-text-color);
+  @include second-text;
+  @include second-border;
   border-radius: 5px;
   padding: 3px;
   transition: 0.5s ease;
-}
-.links > a:hover {
-  transition: 0.5s ease;
-  filter: brightness(75%);
 }

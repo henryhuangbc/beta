@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "styles/mixins.scss";
 
-.nav {
-}
 .regular {
   display: flex;
   justify-content: center;
@@ -15,9 +13,8 @@
   align-items: center;
 }
 
-.links a,
-.links a:hover {
-  color: var(--second-text-color);
+.links a {
+  @include second-text;
 }
 
 .repoLink {
@@ -39,7 +36,6 @@
 }
 
 .hamContent {
-  font-family: "Roboto", sans-serif;
   position: fixed;
   border: 2px solid var(--text-color);
   padding: 1rem;

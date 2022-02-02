@@ -23,6 +23,11 @@
 }
 
 .postSearch:focus {
-  box-shadow: 0 0 4pt 1pt #1390ff;
+  box-shadow: 0 0 4pt 2pt #1390ff;
+
   transition: 0.2s ease-in;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 0 4pt 4pt #1390ff;
+  }
 }

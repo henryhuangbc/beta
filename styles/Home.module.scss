@@ -1,3 +1,5 @@
+@import "styles/mixins.scss";
+
 .main {
   display: flex;
   justify-content: center;
@@ -7,13 +9,16 @@
 }
 
 .hello {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -2px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--text-color);
-  font-size: max(4rem, 7vw, 4rem);
-  font-weight: bold;
+  font-size: max(4rem, 6vw, 4rem);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 607px) {
     margin-top: 1.4rem;
@@ -49,18 +54,15 @@
 }
 
 .projectLink {
-  color: var(--second-text-color);
+  @include second-text;
+  @include second-border;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3px;
   margin: 0.5rem 0 0.5rem 0;
-  border: 2px solid var(--second-text-color);
   padding: 8px;
   border-radius: 0.3rem;
-}
-.projectLink:hover {
-  color: var(--second-text-color);
 }
 
 .projectLink:first-child {
@@ -80,12 +82,12 @@
 
 .linkName {
   font-size: 1.3rem;
-  color: var(--second-text-color);
+  @include second-text;
 }
 
 .cardTitle {
-  text-align: center;
   color: var(--second-text-color);
+  text-align: center;
   font-size: 1.8rem;
 }
 
