@@ -15,13 +15,14 @@
   height: 3rem;
   border-radius: 0.4rem;
   border: none;
-  outline: 0px solid #0099ff;
-  transition: 0.1s ease-in;
+  box-shadow: 0 0 0 1pt grey;
   padding: 0 0.4rem 0 0.4rem;
   border: 3px solid var(--text-color);
+  outline: none;
+  transition: 0.2s ease-in;
 }
 
 .postSearch:focus {
-  outline: 4px solid #0099ff;
-  transition: 0.1s ease-in;
+  box-shadow: 0 0 4pt 1pt #1390ff;
+  transition: 0.2s ease-in;
 }
