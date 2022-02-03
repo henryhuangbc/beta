@@ -19,13 +19,12 @@
   padding: 0 0.4rem 0 0.4rem;
   border: 3px solid var(--text-color);
   outline: none;
-  transition: 0.2s ease-in;
+  transition: 0.2s;
 }
 
 .postSearch:focus {
   box-shadow: 0 0 4pt 2pt #1390ff;
-
-  transition: 0.2s ease-in;
+  transition: 0.2s;
 
   @media (prefers-color-scheme: dark) {
     box-shadow: 0 0 4pt 4pt #1390ff;
