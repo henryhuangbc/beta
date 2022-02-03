@@ -24,9 +24,25 @@
   gap: 0.4rem;
   border-radius: 8px;
   background-color: #0088ff;
+  border: 1px solid #0088ff;
+
   color: #fff !important;
   padding: 0.4rem 1rem;
+  transition: 0.3s ease-in;
 }
+.repoLink:hover {
+  background-color: transparent;
+  border: 1px solid #0088ff;
+  transition: 0.3s ease-in;
+}
+.repoLink:hover span {
+  color: #007bff;
+
+  @media (prefers-color-scheme: dark) {
+    color: #00aaff;
+  }
+}
+
 .repoLink img {
   width: 30px;
 }

@@ -11,7 +11,7 @@ export default function Meta({ page }) {
 
       <meta
         name="keywords"
-        content="cubingsoda, programming, code, coding, js, javascript, py, python, react, reactjs"
+        content="cubingsoda, programming, code, coding, js, javascript, py, python, react, react"
       />
       <meta
         name="description"
