@@ -1,11 +1,8 @@
 import Link from "next/link";
 
-// import { HamburgerSpin } from "react-animated-burgers";
 import { useState, useCallback, useEffect, isValidElement } from "react";
 
-// React Component
 import Burger from "@animated-burgers/burger-squeeze";
-// don't forget the styles
 import "@animated-burgers/burger-squeeze/dist/styles.css";
 
 import styles from "styles/components/NavBar.module.scss";
@@ -45,7 +42,7 @@ export default function Ham() {
             <Link href="/">
               <a onClick={closeHamNav}>
                 <img
-                  src="/icon.png"
+                  src="/favicons/icon.png"
                   className={styles.heroIcon}
                   alt="Site Icon"
                   draggable="false"
