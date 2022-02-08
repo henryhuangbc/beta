@@ -21,7 +21,7 @@ export default function Meta({ page, desc }) {
       <meta name="description" content={descText} />
 
       <meta property="og:image" content="/favicons/icon.png" />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={titleText} />
       <meta
         property="og:description"
         content={descText}
