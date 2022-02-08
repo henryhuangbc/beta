@@ -1,11 +1,11 @@
 import Head from "next/head";
 
 export default function Meta({ page, desc }) {
-  let title;
-  title = page ? `${page} | CubingSoda` : `CubingSoda`;
+  let titleText;
+  titleText= page ? `${page} | CubingSoda` : `CubingSoda`;
 
-  let desc;
-  desc = desc
+  let descText;
+  descText = desc
     ? desc
     : "I showcase my projects and make posts every once in awhile. Reddit, Discord, and GitHub links are at the homepage.";
 
@@ -18,13 +18,13 @@ export default function Meta({ page, desc }) {
         name="keywords"
         content="cubingsoda, programming, code, coding, js, javascript, py, python, react, reactjs"
       />
-      <meta name="description" content={desc} />
+      <meta name="description" content={descText} />
 
       <meta property="og:image" content="/favicons/icon.png" />
       <meta property="og:title" content={title} />
       <meta
         property="og:description"
-        content="My personal website. I showcase my projects and I make posts every once in awhile"
+        content={descText}
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://cubingsoda.pages.dev" />
@@ -55,7 +55,7 @@ export default function Meta({ page, desc }) {
       <meta name="msapplication-TileColor" content="#6eb0ff" />
       <meta name="theme-color" content="#6eb0ff" />
 
-      <title>{title}</title>
+      <title>{titleText}</title>
     </Head>
   );
 }
