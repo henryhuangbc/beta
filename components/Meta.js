@@ -1,8 +1,13 @@
 import Head from "next/head";
 
-export default function Meta({ page }) {
+export default function Meta({ page, desc }) {
   let title;
   title = page ? `${page} | CubingSoda` : `CubingSoda`;
+
+  let desc;
+  desc = desc
+    ? desc
+    : "I showcase my projects and make posts every once in awhile. Reddit, Discord, and GitHub links are at the homepage.";
 
   return (
     <Head>
@@ -13,10 +18,7 @@ export default function Meta({ page }) {
         name="keywords"
         content="cubingsoda, programming, code, coding, js, javascript, py, python, react, reactjs"
       />
-      <meta
-        name="description"
-        content="CubingSoda | I showcase my projects and make posts every once in awhile. Reddit, Discord, and GitHub links are at the homepage."
-      />
+      <meta name="description" content={desc} />
 
       <meta property="og:image" content="/favicons/icon.png" />
       <meta property="og:title" content={title} />

@@ -9,7 +9,8 @@ import Meta from "components/Meta";
 export default function SinglePost({ post }) {
   return (
     <>
-      <Meta page={post.title} />
+      <Meta page={post.title} desc={post.desc} />
+
       <div className={styles.wrapper}>
         <Post postData={post} content />
       </div>
