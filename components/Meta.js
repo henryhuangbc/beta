@@ -11,14 +11,14 @@ export default function Meta({ page }) {
 
       <meta
         name="keywords"
-        content="cubingsoda, programming, code, coding, js, javascript, py, python, react, react"
+        content="cubingsoda, programming, code, coding, js, javascript, py, python, react, reactjs"
       />
       <meta
         name="description"
         content="CubingSoda | I showcase my projects and make posts every once in awhile. Reddit, Discord, and GitHub links are at the homepage."
       />
 
-      <meta property="og:image" content="/icon.png" />
+      <meta property="og:image" content="/favicons/icon.png" />
       <meta property="og:title" content={title} />
       <meta
         property="og:description"
