@@ -1,1 +1,1 @@
-# [Personal Website](https://cubingsoda.pages.dev/)
+# [CubingSoda's Website](https://cubingsoda.pages.dev/)
