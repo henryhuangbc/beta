@@ -31,7 +31,11 @@ export default function PostSearch({ posts, shown }) {
   return (
     <div className={styles.searchWrapper}>
       <label htmlFor="post-search">
-        <FontAwesomeIcon icon={faSearch} className={styles.postSearchIcon} />
+        <FontAwesomeIcon
+          icon={faSearch}
+          className={styles.postSearchIcon}
+          size="4x"
+        />
       </label>
 
       <input

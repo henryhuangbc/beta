@@ -6,12 +6,12 @@
   margin-bottom: 1rem;
 }
 .postSearchIcon {
-  width: 1.8rem;
+  width: 2rem;
 }
 .postSearch {
-  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
   font-size: 1.5rem;
-  width: clamp(15rem, 53vw, 64rem);
+  width: clamp(15rem, 43vw, 64rem);
   height: 3rem;
   border-radius: 0.4rem;
   border: none;
@@ -20,13 +20,4 @@
   border: 3px solid var(--text-color);
   outline: none;
   transition: 0.2s;
-}
-
-.postSearch:focus {
-  box-shadow: 0 0 4pt 2pt #1390ff;
-  transition: 0.2s;
-
-  @media (prefers-color-scheme: dark) {
-    box-shadow: 0 0 4pt 4pt #1390ff;
-  }
 }

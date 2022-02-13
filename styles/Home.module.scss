@@ -9,14 +9,15 @@
 }
 
 .hello {
-  font-family: "Roboto";
+  font-family: "Open Sans";
+  font-weight: bold;
   letter-spacing: -2px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--text-color);
-  font-size: max(4rem, 6vw, 4rem);
+  font-size: max(2rem, 5vw, 4rem);
   margin-top: 1rem;
   margin-bottom: 1rem;
 
@@ -46,6 +47,7 @@
 .card {
   border-radius: 13px;
   padding: 0 3rem 0 3rem;
+  margin: 0 1rem;
   box-shadow: var(--card-styles);
 
   @media (prefers-color-scheme: dark) {
@@ -99,4 +101,12 @@
 
 .nameAndDate {
   text-align: center;
+}
+
+.aboutMe {
+  color: var(--second-text-color);
+  margin-bottom: 1rem;
+  max-width: 17rem;
+  text-align: center;
+  padding-right: 0.4rem;
 }

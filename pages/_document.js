@@ -7,10 +7,11 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@82.7,800&family=Poppins&family=Roboto&display=swap"
             rel="stylesheet"
-          ></link>
+          />
         </Head>
 
         <body>

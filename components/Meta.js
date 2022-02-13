@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Meta({ page, desc }) {
   let titleText;
-  titleText= page ? `${page} | CubingSoda` : `CubingSoda`;
+  titleText = page ? `${page} | CubingSoda` : `CubingSoda`;
 
   let descText;
   descText = desc
@@ -22,10 +22,7 @@ export default function Meta({ page, desc }) {
 
       <meta property="og:image" content="/favicons/icon.png" />
       <meta property="og:title" content={titleText} />
-      <meta
-        property="og:description"
-        content={descText}
-      />
+      <meta property="og:description" content={descText} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://cubingsoda.pages.dev" />
 
