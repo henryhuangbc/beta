@@ -59,41 +59,43 @@
   MARKDOWN STYLES
 */
 
-.post h1 {
-  font-size: 2rem;
-  font-weight: normal;
-}
-.post h2 {
-  font-size: 1.6rem;
-  font-weight: normal;
-}
-.post h3 {
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-.post h4 {
-  font-size: 0.8rem;
-  font-weight: normal;
-}
-.post h5 {
-  font-size: 0.4rem;
-  font-weight: normal;
-}
-.post h6 {
-  font-size: 0.04rem;
-  font-weight: normal;
-}
-.post code {
-  font-family: "Fira Code", monospace;
-  background: #56000b;
-  color: white;
-  border-radius: 5px;
-  padding: 2px;
-  font-size: 0.85rem;
-}
-.post img {
-  display: block;
-  margin: 0 auto;
-  width: 40rem;
-  border-radius: 0.6rem;
+.post {
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+  h5 {
+    font-size: 0.4rem;
+    font-weight: normal;
+  }
+  h6 {
+    font-size: 0.04rem;
+    font-weight: normal;
+  }
+  code {
+    font-family: "Fira Code", monospace;
+    background: #56000b;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.85rem;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 40rem;
+    border-radius: 0.6rem;
+  }
 }
