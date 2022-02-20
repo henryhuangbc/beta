@@ -1,0 +1,30 @@
+:root {
+  // Light Mode
+  --bg-color: hsl(0, 0%, 100%);
+  --second-bg-color: hsl(0deg 0% 85%);
+
+  --text-color: hsl(0, 0%, 0%);
+  // --text-hover-color: hsl(0, 0%, 30%);
+  --second-text-color: hsl(0, 0%, 31%);
+  --second-text-hover-color: hsl(0, 0%, 51%);
+
+  --link-color: hsl(205, 100%, 50%);
+  --link-hover-color: hsl(209, 95%, 70%);
+
+  --card-styles: 0px 0px 12px 10px #e6e6e6db;
+
+  // Dark Mode
+  @media (prefers-color-scheme: dark) {
+    --bg-color: hsl(0, 0%, 0%);
+    --second-bg-color: #212121;
+
+    --text-color: hsl(0, 0%, 100%);
+    // --text-hover-color: hsl(0, 0%, 70%);
+    --second-text-color: hsl(0deg 0% 82%);
+    --second-text-hover-color: hsl(0deg 0% 62%);
+
+    --link-color: hsl(200, 100%, 50%);
+
+    --card-styles: 0px 0px 12px 10px #222222ba;
+  }
+}

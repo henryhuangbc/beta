@@ -1,0 +1,112 @@
+@import "styles/mixins.scss";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hello {
+  font-family: "Open Sans";
+  font-weight: bold;
+  letter-spacing: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  font-size: max(2rem, 5vw, 4rem);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 607px) {
+    margin-top: 1.4rem;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 607px) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: 1350px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.card {
+  border-radius: 13px;
+  padding: 0 3rem 0 3rem;
+  margin: 0 1rem;
+  box-shadow: var(--card-styles);
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: var(--card-styles);
+  }
+}
+
+.projectLink {
+  @include second-text;
+  @include second-border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 8px;
+  border-radius: 0.3rem;
+}
+
+.projectLink:first-child {
+  margin-top: 1rem;
+}
+.projectLink:last-child {
+  margin-bottom: 1rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.linkName {
+  font-size: 1.3rem;
+  @include second-text;
+}
+
+.cardTitle {
+  color: var(--second-text-color);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.projectsCard {
+  @media screen and (max-width: 440px) {
+    margin: 1.3rem;
+  }
+}
+
+.nameAndDate {
+  text-align: center;
+}
+
+.aboutMe {
+  color: var(--second-text-color);
+  margin-bottom: 1rem;
+  max-width: 17rem;
+  text-align: center;
+  padding-right: 0.4rem;
+}

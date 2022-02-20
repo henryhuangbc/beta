@@ -1,0 +1,101 @@
+@import "styles/mixins.scss";
+
+.wrapper {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post {
+  border-bottom: 2px solid var(--second-text-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: clamp(27ch, 94%, 71ch);
+  color: var(--second-text-color);
+}
+
+.post:last-child {
+  border: none;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.3rem 0 1rem 0;
+}
+
+.tag {
+  border: 1px solid var(--second-text-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin: 0.3rem 0.7rem 0.3rem 0;
+}
+
+.contentDesc {
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.readMore {
+  display: block;
+  margin-top: 1rem;
+  width: fit-content;
+  text-decoration: none !important;
+  border-bottom: 1px solid black;
+
+  @include second-text;
+  @include second-border-bottom;
+}
+
+/*
+  MARKDOWN STYLES
+*/
+
+.post {
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+  h5 {
+    font-size: 0.4rem;
+    font-weight: normal;
+  }
+  h6 {
+    font-size: 0.04rem;
+    font-weight: normal;
+  }
+  code {
+    font-family: "Fira Code", monospace;
+    background: #56000b;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.85rem;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 40rem;
+    border-radius: 0.6rem;
+  }
+}

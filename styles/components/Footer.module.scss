@@ -1,0 +1,37 @@
+// Footer
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  color: white;
+  background-color: rgb(14, 44, 120);
+  padding: 10px;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.3rem;
+}
+.footer2 {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer1 img {
+    display: none;
+  }
+
+  .footer1 {
+    margin-bottom: 0.4rem;
+  }
+}
