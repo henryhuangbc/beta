@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -10,6 +11,8 @@ import PostSearch from "components/PostSearch";
 
 import styles from "styles/Posts.module.scss";
 =======
+=======
+>>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
 import Post from "components/Post";
 import { getAllPosts } from "lib/posts-api";
 
@@ -19,6 +22,9 @@ import { v4 as uuidv4 } from "uuid";
 import Meta from "components/Meta";
 import PostSearch from "components/PostSearch";
 import { useState } from "react";
+<<<<<<< HEAD
+>>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
+=======
 >>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
 
 export default function SinglePost({ allPosts }) {
@@ -26,7 +32,13 @@ export default function SinglePost({ allPosts }) {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <UI page="Posts">
+=======
+    <>
+      <Meta page="Posts" />
+
+>>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
 =======
     <>
       <Meta page="Posts" />
@@ -40,7 +52,11 @@ export default function SinglePost({ allPosts }) {
         })}
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </UI>
+=======
+    </>
+>>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
 =======
     </>
 >>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6

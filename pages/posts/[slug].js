@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import UI from "components/UI";
 
 import { getPostBySlug, getAllPosts } from "lib/posts-api";
@@ -15,6 +16,8 @@ export default function SinglePost({ post }) {
       </div>
     </UI>
 =======
+=======
+>>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
 import Post from "components/Post";
 import { getPostBySlug, getAllPosts } from "lib/posts-api";
 import markdownToHtml from "lib/markdown-to-html";
@@ -32,6 +35,9 @@ export default function SinglePost({ post }) {
         <Post postData={post} content />
       </div>
     </>
+<<<<<<< HEAD
+>>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
+=======
 >>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
   );
 }

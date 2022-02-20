@@ -17,7 +17,11 @@ export default function Meta({ page, desc }) {
       <meta
         name="keywords"
 <<<<<<< HEAD
+<<<<<<< HEAD
         content="cubingsoda, programming, coding, js, javascript, py, python, react, reactjs"
+=======
+        content="cubingsoda, programming, code, coding, js, javascript, py, python, react, reactjs"
+>>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
 =======
         content="cubingsoda, programming, code, coding, js, javascript, py, python, react, reactjs"
 >>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
