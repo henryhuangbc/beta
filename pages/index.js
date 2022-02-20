@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { v4 as uuidv4 } from "uuid";
 
 import UI from "components/UI";
@@ -12,26 +10,6 @@ import styles from "styles/Home.module.scss";
 export default function Home() {
   return (
     <UI>
-=======
-=======
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-import styles from "styles/Home.module.scss";
-import Meta from "components/Meta";
-import PersonalLink from "components/MediaLink";
-
-import projects from "lib/projects-list";
-
-import { v4 as uuidv4 } from "uuid";
-
-export default function Home() {
-  return (
-    <>
-      <Meta />
-
-<<<<<<< HEAD
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-=======
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
       <main className={styles.main}>
         <h1 className={styles.hello}>Hi, I am a Front-end Web Developer.</h1>
         <div className={styles.cards}>
@@ -89,14 +67,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-<<<<<<< HEAD
-<<<<<<< HEAD
     </UI>
-=======
-    </>
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-=======
-    </>
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
   );
 }

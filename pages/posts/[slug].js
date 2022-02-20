@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import UI from "components/UI";
 
 import { getPostBySlug, getAllPosts } from "lib/posts-api";
@@ -15,30 +13,6 @@ export default function SinglePost({ post }) {
         <Post postData={post} content />
       </div>
     </UI>
-=======
-=======
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-import Post from "components/Post";
-import { getPostBySlug, getAllPosts } from "lib/posts-api";
-import markdownToHtml from "lib/markdown-to-html";
-
-import styles from "styles/Posts.module.scss";
-
-import Meta from "components/Meta";
-
-export default function SinglePost({ post }) {
-  return (
-    <>
-      <Meta page={post.title} desc={post.desc} />
-
-      <div className={styles.wrapper}>
-        <Post postData={post} content />
-      </div>
-    </>
-<<<<<<< HEAD
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-=======
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
   );
 }
 

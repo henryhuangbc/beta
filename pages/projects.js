@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
@@ -12,28 +10,6 @@ import styles from "styles/Projects.module.scss";
 export default function Projects() {
   return (
     <UI page="Projects">
-=======
-=======
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-import Meta from "components/Meta";
-
-import projects from "lib/projects-list";
-
-import styles from "styles/Projects.module.scss";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { v4 as uuidv4 } from "uuid";
-
-export default function Projects() {
-  return (
-    <>
-      <Meta page="Projects" />
-
-<<<<<<< HEAD
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-=======
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
       <main className={styles.projects}>
         {projects.map((project) => {
           return (
@@ -71,14 +47,6 @@ export default function Projects() {
           );
         })}
       </main>
-<<<<<<< HEAD
-<<<<<<< HEAD
     </UI>
-=======
-    </>
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
-=======
-    </>
->>>>>>> 0d2bbe0ff564dea5e559d1e3dfae5c7ea65d91a6
   );
 }
