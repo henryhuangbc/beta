@@ -18,7 +18,7 @@ export default function RegularNav() {
 
       <section className={styles.links}>
         <Link href="/">
-          <a>CubingSoda</a>
+          <a>Henry Huang</a>
         </Link>
 
         <Link href="/projects">
@@ -30,7 +30,7 @@ export default function RegularNav() {
         </Link>
 
         <a
-          href="https://github.com/CubingSoda/personal-website"
+          href="https://github.com/henryhuangbc/beta"
           target="_blank"
           rel="noreferrer"
           className={styles.repoLink}

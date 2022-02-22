@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <UI>
       <main className={styles.main}>
-        <h1 className={styles.hello}>Hi, I am a Front-end Web Developer.</h1>
+        <h1 className={styles.hello}>Sup. My name is Henry.</h1>
         <div className={styles.cards}>
           <div className={styles.card}>
             <h1 className={styles.cardTitle}>Media</h1>
@@ -19,17 +19,17 @@ export default function Home() {
             <PersonalLink
               name="GitHub"
               img="/img/icons/github.png"
-              href="https://github.com/CubingSoda"
+              href="https://github.com/henryhuangbc"
             />
             <PersonalLink
               name="Reddit"
               img="/img/icons/reddit.png"
-              href="https://www.reddit.com/user/CubingSoda/"
+              href="https://www.reddit.com/user/officialdoglover/"
             />
             <PersonalLink
               name="Discord"
               img="/img/icons/discord.png"
-              href="https://discord.com/users/822191907286417450"
+              href="https://discord.com/users/1234567890"
             />
           </div>
 
@@ -37,13 +37,9 @@ export default function Home() {
             <h1 className={styles.cardTitle}>About Me</h1>
 
             <div className={styles.aboutMe}>
-              I am a programmer living in the United States. I have
-              intermediate-level Python skills, and pretty much mastered
-              front-end development using SCSS, React, and Next.
+              I do nothing but code and play game all day no stop.
               <br />
-              <br />I currently use Manjaro Linux, after having crashes in a
-              hackintosh I built a few months ago. Windows is also installed,
-              just in case I screw up something on Linux.
+              <br />I use Mac, only Mac, and only Mac. Thanks for the concern.
             </div>
           </div>
 
