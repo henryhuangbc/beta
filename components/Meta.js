@@ -16,7 +16,7 @@ export default function Meta({ page, desc }) {
 
       <meta
         name="keywords"
-        content="cubingsoda, programming, coding, js, javascript, py, python, react, reactjs"
+        content="Henry Huang, programming, coding, js, javascript, py, python, react, reactjs"
       />
       <meta name="description" content={descText} />
 

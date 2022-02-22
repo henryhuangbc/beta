@@ -47,7 +47,7 @@ export default function Ham() {
                   alt="Site Icon"
                   draggable="false"
                 />
-                CubingSoda
+                Henry Huang
               </a>
             </Link>
           </div>
@@ -63,7 +63,7 @@ export default function Ham() {
 
             <a
               onClick={closeHamNav}
-              href="https://github.com/CubingSoda/personal-website"
+              href="https://github.com/Henry Huang/personal-website"
               target="_blank"
               rel="noreferrer"
               className={styles.repoLink}
