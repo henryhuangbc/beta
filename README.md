@@ -1,1 +1,1 @@
-# [CubingSoda's Website](https://cubingsoda.pages.dev/)
+I love forester.
